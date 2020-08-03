@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,800;1,500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(244, 244, 245);
+  font-family: "Mulish", sans-serif;
+  color: rgb(75, 75, 75);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+header {
+  text-align: center;
+}
+
+h2 {
+  padding: 10px;
+  font-weight: 500;
+}
+
+p {
+  text-align: center;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:  rgb(75, 75, 75);
+}
+
+a:hover {
+  color: rgb(151, 147, 147);
+}
+
+section {
+  max-width: 500px;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.container-1 {
+  margin: auto;
+}
+
+.main-header {
+  padding-top: 2em;
+}
+
+.logo {
+  align-content: center;
+}
+
+.nav li {
+  margin: 15px;
+  padding: 10px;
+  background-color: white;
+  display: block;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile-image {
+  width: 100%;
+  padding: 20px 60px 10px;
+}
+
+.intro {
+  padding-bottom: 20px;
+  color: #797e83;
+}
+
+.flex {
+  background-color: white;
+  padding: 1rem;
+}
+
+.profile {
+  margin: 5px;
+  padding: 30px 20px 20px;
+}
+
+.contact h2 {
+  font-weight: bold;
+}
+
+.contact p {
+  color: #797e83;
+}
+
+.contact span {
+  font-weight: 600;
+}
+
+.footer-container-A {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px;
+  border-top: 1px solid rgb(211, 210, 210);
+  padding-top: 20px;
+}
+
+.btt {
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+  font-weight: bold;
+}
+
+.footer-container-B {
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* media query */
+
+@media (min-width: 768px) {
+  h1.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ul.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav li {
+    background-color: transparent;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px 40px;
+    margin: 0;
+  }
+
+  .profile-image {
+    padding: 30px 16px;
+  }
+
+  .intro {
+    padding: 30px 8px 30px 16px;
+    text-align: left;
+  }
+
+  .portfolio {
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex-basis: 50%;
+    padding: 0.5rem;
+  }
+
+  .box h2 {
+    padding-top: 1rem;
+  }
+
+  .box p {
+    padding-top: 0.25rem;
+  }
+
+  .footer-container-A {
+    display: none;
+  }
+
+  .footer-container-B {
+    display: inline;
+    padding: 1rem;
+    font-weight: bold;
+  }
+
+  .footer-nav {
+    margin-top: 35px;
+    border-top: 1px solid rgb(211, 210, 210);
+    padding-top: 20px;
+  }
+
+  .footer-logo {
+    float: left;
+    padding: 10px;
+  }
+
+  .footer-nav ul {
+    float: right;
+    display: flex;
+  }
+  .footer-nav li {
+    padding: 10px;
+    color: rgb(75, 75, 75);
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-nav {
+    display: inline;
+  }
+
+  .logo {
+    float: left;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .nav {
+    float: right;
+  }
+
+  .container-1 {
+    margin: auto;
+    width: 95%;
+  }
+
+  .intro {
+    text-align: left;
+  }
+
+  .box {
+    flex-basis: 33.3%;
+    padding: 20px 10px;
+  }
+}
